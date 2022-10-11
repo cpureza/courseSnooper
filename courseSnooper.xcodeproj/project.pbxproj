@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		43C2F6EA28F4E7D9009E43D6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C2F6E928F4E7D9009E43D6 /* main.swift */; };
+		43C2F6F428F5001E009E43D6 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 43C2F6F328F5001E009E43D6 /* ArgumentParser */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43C2F6F428F5001E009E43D6 /* ArgumentParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +90,9 @@
 			dependencies = (
 			);
 			name = courseSnooper;
+			packageProductDependencies = (
+				43C2F6F328F5001E009E43D6 /* ArgumentParser */,
+			);
 			productName = courseSnooper;
 			productReference = 43C2F6E628F4E7D9009E43D6 /* courseSnooper */;
 			productType = "com.apple.product-type.tool";
@@ -116,6 +121,9 @@
 				Base,
 			);
 			mainGroup = 43C2F6DD28F4E7D9009E43D6;
+			packageReferences = (
+				43C2F6F228F5001E009E43D6 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
 			productRefGroup = 43C2F6E728F4E7D9009E43D6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -294,6 +302,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		43C2F6F228F5001E009E43D6 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		43C2F6F328F5001E009E43D6 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 43C2F6F228F5001E009E43D6 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 43C2F6DE28F4E7D9009E43D6 /* Project object */;
 }
